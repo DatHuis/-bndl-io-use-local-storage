@@ -1,6 +1,6 @@
 {
   "name": "@bndl-io/use-local-storage",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A React hook to manage local storage values as state.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -21,15 +21,15 @@
   "author": "Ramon Gebben <ramon@dahuis.nl>",
   "license": "MIT",
   "peerDependencies": {
-    "react": ">=16.8.0"
+    "react": ">=18.3.1"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.0.1",
     "@types/jest": "^29.5.14",
     "@types/prop-types": "^15.x",
-    "@types/react": "^18.x",
-    "@types/react-dom": "^18.x",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
     "csstype": "^3.x",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
