@@ -7,4 +7,6 @@ module.exports = {
   },
   testPathIgnorePatterns: ['/node_modules/', '/dist/'],
   setupFilesAfterEnv: ['<rootDir>/setupTests.ts'],
+  collectCoverage: true,
+  coverageDirectory: 'coverage',
 };
