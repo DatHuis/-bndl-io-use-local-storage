@@ -3,9 +3,16 @@ import safeLocalStorage from '../safeLocalStorage/index';
 
 const useLocalStorageValue = <T>(
   key: string,
+  initialValue?: T,
 ): [T | null, (value: T) => void] => {
   const [storedValue, setStoredValue] = useState<T | null>(() => {
+    // Fetch the value from localStorage
     const item = safeLocalStorage.getItem(key);
+    // If initialValue is provided, use it and update localStorage accordingly
+    if (initialValue !== undefined) {
+      safeLocalStorage.setItem(key, JSON.stringify(initialValue));
+      return initialValue;
+    }
     return item ? JSON.parse(item) : null;
   });
 
